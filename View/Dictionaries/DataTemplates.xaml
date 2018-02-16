@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:systemVms="clr-namespace:KermandCenter.ViewModel.Systems;assembly=ViewModel"
+        xmlns:systemViews="clr-namespace:KermandCenter.View.ControlViews"
+        xmlns:com="clr-namespace:KermandCenter.ViewModel.Commands;assembly=ViewModel"
+        xmlns:vcom="clr-namespace:KermandCenter.ViewModel.Commands.Vessel;assembly=ViewModel"
+        xmlns:comViews="clr-namespace:KermandCenter.View.Commands">
+
+    <DataTemplate DataType="{x:Type systemVms:VesselControlViewModel}">
+        <systemViews:VesselControlView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type systemVms:FlightPlanViewModel}">
+        <systemViews:FlightPlanView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type systemVms:Phase}">
+        <systemViews:PhaseView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type com:AutoPilotCommand}">
+        <comViews:AutoPilotView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vcom:SetThrottleCommand}">
+        <comViews:SetThrottleCommandView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vcom:StageCommand}">
+        <comViews:StageCommandView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vcom:ToggleGroupCommand}">
+        <comViews:ToggleGroupCommandView />
+    </DataTemplate>
+
+</ResourceDictionary>

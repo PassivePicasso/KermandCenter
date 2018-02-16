@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="KermandCenter.View.Commands.SetThrottleCommandView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" HorizontalAlignment="Stretch">
+    <Grid HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Set Throttle" VerticalAlignment="Center" HorizontalAlignment="Left" TextDecorations="Underline"/>
+
+        <Grid Grid.Row="1"  HorizontalAlignment="Stretch" Margin="0,5,55,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="{Binding Path=Throttle, StringFormat={}Throttle {0}}" VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch" />
+            <Slider x:Name="HeadingControl" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                    Minimum="0" Maximum="1" Value="{Binding Path=Throttle}" />
+        </Grid>
+    </Grid>
+</UserControl>

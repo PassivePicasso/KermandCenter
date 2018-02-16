@@ -1,9 +1,32 @@
-﻿<Application x:Class="View.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:View"
-             StartupUri="MainWindow.xaml">
+﻿<Application x:Class="KermandCenter.View.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" StartupUri="KermandCenterView.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                
+                <ResourceDictionary>
+                    <FontFamily x:Key="DefaultFont">FixedsysTTF Monospaced Semi Bold</FontFamily>
+                </ResourceDictionary>
+
+                <ResourceDictionary Source="Dictionaries/Converters.xaml" />
+                <ResourceDictionary Source="Dictionaries/ColorsAndBrushes.xaml" />
+                <ResourceDictionary Source="Dictionaries/DataTemplates.xaml" />
+
+                <ResourceDictionary Source="Dictionaries/Styles/Border.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/Button.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/CheckBox.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/ComboBox.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/IntegerUpDown.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/ListBox.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/MoveDownUpButtons.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/RadioButton.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/ScrollBar.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/Slider.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/TextBlock.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/TextBox.xaml" />
+                <ResourceDictionary Source="Dictionaries/Styles/ToggleButton.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

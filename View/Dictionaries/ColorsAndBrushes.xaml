@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:KermandCenter.View.Dictionaries">
+
+    <Color x:Key="BackgroundColor">#000000</Color>
+    <Color x:Key="PressedBackgroundColor">#008800</Color>
+    <Color x:Key="ActiveBackgroundColor">#004400</Color>
+    <Color x:Key="ForegroundColor">#00CC00</Color>
+    <Color x:Key="BorderColor">#00CC00</Color>
+    <Thickness x:Key="BorderThicc">1.5</Thickness>
+
+    <SolidColorBrush x:Key="PressedBackgroundBrush" Color="{StaticResource PressedBackgroundColor}" />
+    <SolidColorBrush x:Key="ActiveBackgroundBrush" Color="{StaticResource ActiveBackgroundColor}" />
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}" />
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}" />
+    <SolidColorBrush x:Key="BorderColorBrush" Color="{StaticResource BorderColor}" />
+
+</ResourceDictionary>

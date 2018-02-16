@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace View
+namespace KermandCenter.View.Commands
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AutoPilotView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AutoPilotView : UserControl
     {
-        public MainWindow()
+        public AutoPilotView()
         {
             InitializeComponent();
         }
